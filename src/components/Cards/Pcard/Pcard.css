@@ -1,0 +1,32 @@
+.cardBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.cardHeader .icon{
+    cursor: pointer;
+}
+.icon{
+    position: relative;
+    top: .4rem;
+    color: #6E64ED;
+}
+.rent{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6E64ED;
+}
+.cardHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ptype{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.moveInDate{
+    font-weight: bold;
+    color: #6E64ED;
+}
