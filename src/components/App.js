@@ -35,7 +35,7 @@ function App() {
         .includes(search.toLowerCase())
       ));
       setProData(newProData);
-    } else {
+    } else if (search === "") {
       setProData(data);
     }
   }
