@@ -15,6 +15,7 @@ function App() {
     location: "All"
   })
 
+  // Rest the filters
   function resetFilters() {
     setFilterData({
       pType: "All",
@@ -25,9 +26,10 @@ function App() {
     setProData(data)
   }
 
+  // Handler for Searching
   function handleKeyPress(e) {
     if (e.key === "Enter" && search !== "") {
-      const newProData = proData.filter((item) => (Object.values(item)
+      const newProData = data.filter((item) => (Object.values(item)
         .join("")
         .toLowerCase()
         .includes(search.toLowerCase())
@@ -38,6 +40,7 @@ function App() {
     }
   }
 
+  // Handler for Filters
   function handleFilter() {
     setProData(data)
     let newProData = proData;

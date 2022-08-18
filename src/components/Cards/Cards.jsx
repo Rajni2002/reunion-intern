@@ -4,7 +4,6 @@ import Pcard from "./Pcard/Pcard.jsx";
 
 export default function Cards({proData, setProData}) {
     function giveStar(id){
-        console.log("Give Star");
         setProData(
             proData.map((item) => {
                 item.like = (item.id) === id ? !(item.like) : item.like
